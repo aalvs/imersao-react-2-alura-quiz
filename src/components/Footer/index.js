@@ -1,17 +1,18 @@
 import styled from 'styled-components'
 
 const FooterWrapper = styled.footer`
-  background-color: #00000070;
+  background-color: #0d0d0f;
   padding: 20px;
   display: flex;
   align-items: center;
   border-radius: 4px; 
+  color: ${({ theme }) => theme.colors.white};
   img {
     width: 58px;
     margin-right: 23px;
   }
   a {
-    color: white;
+    color: ${({ theme }) => theme.colors.white};
     text-decoration: none;
     transition: .3s;
     &:hover,
